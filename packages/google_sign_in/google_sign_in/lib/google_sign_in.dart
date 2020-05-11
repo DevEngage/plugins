@@ -95,7 +95,7 @@ class GoogleSignInAccount implements GoogleIdentity {
       email: email,
       shouldRecoverAuth: true,
     );
-      if (response.serverAuthCode == null {
+      if (response.serverAuthCode == null) {
           response.serverAuthCode = serverAuthCode;
       }
 
