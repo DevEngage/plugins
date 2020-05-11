@@ -16,11 +16,7 @@ flutter:
         default_package: google_sign_in_web
 
 dependencies:
-  google_sign_in_platform_interface:
-    git:
-      url: https://github.com/DevEngage/plugins.git
-      path: packages/google_sign_in/google_sign_in_platform_interface
-      ref: server-auth-code
+  google_sign_in_platform_interface: 1.1.1
   flutter:
     sdk: flutter
   meta: ^1.0.4
