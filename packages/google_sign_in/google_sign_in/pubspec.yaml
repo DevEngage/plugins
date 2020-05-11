@@ -17,7 +17,7 @@ flutter:
 
 dependencies:
   google_sign_in_platform_interface: 
-    path: ../google_sign_in_platform_interface
+    path: ./../google_sign_in_platform_interface
   flutter:
     sdk: flutter
   meta: ^1.0.4
