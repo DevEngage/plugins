@@ -66,8 +66,8 @@ class GoogleSignInAccount implements GoogleIdentity {
   @override
   final String id;
 
-  @override
-  final String serverAuthCode;
+//   @override
+//   final String serverAuthCode;
     
   @override
   final String photoUrl;
