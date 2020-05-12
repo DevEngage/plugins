@@ -12,7 +12,11 @@ flutter:
         fileName: google_sign_in_web.dart
 
 dependencies:
-  google_sign_in_platform_interface: ^1.1.0
+  google_sign_in_platform_interface:
+    git:
+      url: https://github.com/DevEngage/plugins.git
+      path: packages/google_sign_in/google_sign_in_platform_interface
+      ref: server-auth-code
   flutter:
     sdk: flutter
   flutter_web_plugins:
