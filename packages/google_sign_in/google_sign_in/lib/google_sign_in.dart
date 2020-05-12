@@ -44,7 +44,7 @@ class GoogleSignInAccount implements GoogleIdentity {
         email = data.email,
         id = data.id,
         photoUrl = data.photoUrl,
-//         serverAuthCode = data.serverAuthCode,
+        serverAuthCode = data.serverAuthCode,
         _idToken = data.idToken {
     assert(id != null);
   }
@@ -66,8 +66,8 @@ class GoogleSignInAccount implements GoogleIdentity {
   @override
   final String id;
 
-//   @override
-//   final String serverAuthCode;
+  @override
+  final String serverAuthCode;
     
   @override
   final String photoUrl;
@@ -95,9 +95,9 @@ class GoogleSignInAccount implements GoogleIdentity {
       email: email,
       shouldRecoverAuth: true,
     );
-//       if (response.serverAuthCode == null) {
-//           response.serverAuthCode = serverAuthCode;
-//       }
+      if (response.serverAuthCode == null) {
+          response.serverAuthCode = serverAuthCode;
+      }
 
     // On Android, there isn't an API for refreshing the idToken, so re-use
     // the one we obtained on login.
